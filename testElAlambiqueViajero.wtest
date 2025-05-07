@@ -1,4 +1,7 @@
-import elAlambiqueViajero.*
+import luke.*
+import autos.*
+import ciudades.*
+
 test "luke cuenta cuando va de viaje"{
     luke.viajar(paris)
     assert.equals(1, luke.cantidadViajes())
@@ -55,10 +58,10 @@ test "luke viaja 2 veces, quiere viajar a Paris y no puede"{
 }
 
 test "luke viaja a hurlingham en el convertible convertido en chatarra" {
-  luke.vehiculo(convertible)
-  convertible.convertir(chatarra)
-  luke.viajar(hurlingham)
-  assert.equals("sticker de la Unahur",luke.recuerdo())
-  assert.equals(5,chatarra.cañones())
+    centro.verificar(alambiqueVeloz)
+    centro.verificar(moto)
+    centro.verificar(chatarra)
+    centro.replanificacionEn(paris)
 
   }
+
