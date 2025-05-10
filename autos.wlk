@@ -17,7 +17,7 @@ object alambiqueVeloz {
 object antigualla {
   const gangsters = ["mario", "marco", "chincho", "brian", "florencia", "amelie", "pablo"]
   method rapido() = gangsters.fold(0,{acum,gangster => acum + gangster.length()}) 
-  method puedeFuncionar() = gangsters.even()
+  method puedeFuncionar() = gangsters.size().even()
   method desgaste() {
     gangsters.remove(gangsters.last())
   }
